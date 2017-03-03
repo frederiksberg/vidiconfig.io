@@ -5,5 +5,5 @@
   
   "enabledExtensions": ["conflictSearch", "layerSearch"],
   
-  "enabledPrints": ["frederiksberg-print"],
+  "enabledPrints": ["frederiksberg-print"]
 }
