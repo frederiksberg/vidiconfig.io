@@ -2,5 +2,8 @@
   "schemata" : [
     "1fb49bc0-f515-11e6-91bf-0ecd1babdde5"   
   ],
-  "enabledExtensions": ["conflictSearch", "layerSearch"]
+  
+  "enabledExtensions": ["conflictSearch", "layerSearch"],
+  
+  "enabledPrints": ["frederiksberg-print"],
 }
