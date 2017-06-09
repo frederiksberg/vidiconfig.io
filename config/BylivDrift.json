@@ -3,7 +3,7 @@
     "35fd62f6-a16f-4dc4-9d9e-2be4e6e00145"   
   ],
   
-  "enabledExtensions": ["conflictSearch", "layerSearch", "skraafoto", "streetView", "coordinates"],
+  "enabledExtensions": ["conflictSearch", "layerSearch", "skraafoto", "streetView"],
   
   "enabledPrints": ["frederiksberg-print"]
 }
