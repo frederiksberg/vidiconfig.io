@@ -1,1 +1,9 @@
-
+{
+  "schemata" : [
+    "dc84438a-3ed3-4c1c-b0f7-2047341b9130"   
+  ],
+  
+  "enabledExtensions": ["conflictSearch", "layerSearch", "skraafoto", "streetView"],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
