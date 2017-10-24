@@ -8,6 +8,6 @@
   "enabledPrints": ["frederiksberg-print"],
   
   "searchConfig": {
-        "komkode": ["101", "147"] // Example of config for danish search
+        "komkode": ["101", "147"]
   }
 }
