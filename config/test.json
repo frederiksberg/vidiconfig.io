@@ -5,5 +5,9 @@
   
   "enabledExtensions": ["conflictSearch", "layerSearch", "skraafoto", "streetView"],
   
-  "enabledPrints": ["frederiksberg-print"]
+  "enabledPrints": ["frederiksberg-print"],
+  
+  "searchConfig": {
+        "komkode": ["101", "147"] // Example of config for danish search
+  }
 }
