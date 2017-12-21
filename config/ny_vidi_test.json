@@ -1,0 +1,9 @@
+{
+  "schemata" : [
+    "plansystemdk"   
+  ],
+  
+  "enabledExtensions": ["layerSearch", "skraafoto", "streetView"],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
