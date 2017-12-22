@@ -3,7 +3,8 @@
     "grundkort",
     "plansystemdk",
     "affald",
-    "stab"
+    "stab",
+    "kulturarvstyrelsen"
   ],
   
   "enabledExtensions": ["layerSearch", "skraafoto", "streetView"],
