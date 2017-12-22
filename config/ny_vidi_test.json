@@ -1,7 +1,13 @@
 {
   "schemata" : [
     "grundkort",
+    "plan",
     "plansystemdk",
+    "stab",
+    "geus",
+    "forsyning",
+    "byrum",
+    "buo",
     "affald",
     "stab",
     "kulturarvstyrelsen",
