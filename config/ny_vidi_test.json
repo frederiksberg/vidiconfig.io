@@ -1,6 +1,7 @@
 {
   "schemata" : [
-    "plansystemdk"   
+    "plansystemdk",
+    "affald"
   ],
   
   "enabledExtensions": ["layerSearch", "skraafoto", "streetView"],
