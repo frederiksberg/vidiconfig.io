@@ -4,7 +4,8 @@
     "plansystemdk",
     "affald",
     "stab",
-    "kulturarvstyrelsen"
+    "kulturarvstyrelsen",
+    "mobilitet"
   ],
   
   "enabledExtensions": ["layerSearch", "skraafoto", "streetView"],
