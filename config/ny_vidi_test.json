@@ -28,7 +28,7 @@
     "vejdirektoratet"
   ],
   
-  "enabledExtensions": ["layerSearch", "skraafoto", "streetView"],
+  "enabledExtensions": ["skraafoto", "streetView"],
   
   "enabledPrints": ["frederiksberg-print"]
 }
