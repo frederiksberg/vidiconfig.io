@@ -1,0 +1,36 @@
+{
+  "schemata" : [
+    "grundkort",
+    "plan",
+    "plansystemdk",
+    "stab",
+    "klima",
+    "jord",
+    "dai",
+    "bygning",
+    "beredskab",
+    "givetprej",
+    "komplan13",
+    "komplan17",
+    "kortforsyningen",
+    "seo",
+    "ssa",
+    "vand",
+    "vej",
+    "geus",
+    "forsyning",
+    "byrum",
+    "buo",
+    "affald",
+    "stab",
+    "kulturarvsstyrelsen",
+    "mobilitet",
+    "vejdirektoratet",
+    "geodanmark",
+    "lois"
+  ],
+  
+  "enabledExtensions": ["brevflet"],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
