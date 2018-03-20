@@ -26,7 +26,8 @@
     "kulturarvsstyrelsen",
     "mobilitet",
     "vejdirektoratet",
-    "geodanmark"
+    "geodanmark",
+    "lois"
   ],
   
   "enabledExtensions": ["skraafoto", "streetView"],
