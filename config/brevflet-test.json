@@ -30,7 +30,7 @@
     "lois"
   ],
   
-  "enabledExtensions": ["brevflet"],
+  "enabledExtensions": ["brevflet","conflictSearch"],
   
   "enabledPrints": ["frederiksberg-print"]
 }
