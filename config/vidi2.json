@@ -30,7 +30,7 @@
     "lois"
   ],
   
-  "enabledExtensions": ["skraafoto", "streetView"],
+  "enabledExtensions": ["skraafoto", "streetView","brevflet"],
   
   "enabledPrints": ["frederiksberg-print"]
 }
