@@ -27,7 +27,8 @@
     "mobilitet",
     "vejdirektoratet",
     "geodanmark",
-    "lois"
+    "lois",
+    "dagi"
   ],
   
   "enabledExtensions": ["skraafoto", "streetView","brevflet"],
