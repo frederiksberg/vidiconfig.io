@@ -27,11 +27,10 @@
     "mobilitet",
     "vejdirektoratet",
     "geodanmark",
-    "lois",
-    "red_test"
+    "lois"
   ],
   
-  "enabledExtensions": ["brevflet","conflictSearch","editor"],
+  "enabledExtensions": ["brevflet","conflictSearch"],
   
   "enabledPrints": ["frederiksberg-print"]
 }
