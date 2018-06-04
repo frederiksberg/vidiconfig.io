@@ -1,0 +1,9 @@
+{
+  "schemata" : [
+    "red_test"
+  ],
+  
+  "enabledExtensions": ["editor"],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
