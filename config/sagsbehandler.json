@@ -1,0 +1,9 @@
+{
+  "schemata" : [
+    "tag:_sagsbehandler"
+  ],
+  
+  "enabledExtensions": ["skraafoto", "streetView","brevflet"],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
