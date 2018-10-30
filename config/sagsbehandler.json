@@ -12,6 +12,9 @@
     "keplergl"
   ],
   
+  "brandName": "Sagsbehandler GIS",
+  "aboutBox": "Denne løsning er rettet mod sagsbehandling"
+  
   "enabledPrints": ["frederiksberg-print"],
   "baseLayers": [
       {
