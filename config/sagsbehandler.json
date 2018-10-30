@@ -5,7 +5,7 @@
 
   "enabledExtensions": [
     "streetView",
-    "brevflet",
+    //"brevflet",
     "conflictSearch",
     "skolevej",
     "isochrone",
