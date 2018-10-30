@@ -2,8 +2,15 @@
   "schemata" : [
     "tag:_sagsbehandler"
   ],
-  
-  "enabledExtensions": ["skraafoto", "streetView","brevflet"],
+
+  "enabledExtensions": [
+    "streetView",
+    "brevflet",
+    "conflictSearch",
+    "skolevej",
+    "isochrone",
+    "keplergl"
+  ],
   
   "enabledPrints": ["frederiksberg-print"],
   "baseLayers": [
