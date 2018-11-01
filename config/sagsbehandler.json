@@ -1,6 +1,7 @@
 {
   "schemata" : [
-    "tag:_sagsbehandler"
+    "tag:_sagsbehandler",
+    "stab"
   ],
   
   "enabledExtensions": ["skraafoto", "streetView","brevflet"],
