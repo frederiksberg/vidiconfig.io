@@ -9,7 +9,8 @@
     "brevflet",
     "conflictSearch",
     "skolevej",
-    "isochrone"
+    "isochrone",
+    "keplergl"
   ],
   
   "enabledPrints": ["frederiksberg-print"]
