@@ -1,67 +1,16 @@
 {
   "schemata" : [
+    "tag:_sagsbehandler",
     "stab"
-    //"tag:_sagsbehandler"
   ],
-
+  
   "enabledExtensions": [
     "streetView",
+    "brevflet",
     "conflictSearch",
     "skolevej",
-    "isochrone",
-    "keplergl"
+    "isochrone"
   ],
   
-  "brandName": "Sagsbehandler GIS",
-  "aboutBox": "Denne løsning er rettet mod sagsbehandling",
-  
-  "enabledPrints": ["frederiksberg-print"],
-  "baseLayers": [
-      {
-        "id": "luftfotoserier.geodanmark_2016_12_5cm",
-        "name": "Luftfoto 2016",
-        "db": "baselayers",
-        "host": "https://gc2.io",
-        "config": {
-            "maxZoom": 21,
-            "maxNativeZoom": 20,
-            "attribution": "&copy; SDFE & MapCentia ApS"
-        }
-     },
-      {
-        "id": "luftfotoserier.geodanmark_2017_12_5cm",
-        "name": "Luftfoto 2017",
-        "db": "baselayers",
-        "host": "https://gc2.io",
-        "config": {
-            "maxZoom": 21,
-            "maxNativeZoom": 20,
-            "attribution": "&copy; SDFE & MapCentia ApS"
-        }
-    },{
-        "id": "geodk.bright",
-        "name": "GeoDanmark kort, Gråtoner",
-        "db": "baselayers",
-        "host": "https://gc2.io",
-        "config": {
-            "maxZoom": 21,
-            "maxNativeZoom": 19,
-            "attribution": "&copy; SDFE & MapCentia ApS"
-        }
-    },{
-        "id": "geodk.terminal",
-        "name": "GeoDanmark kort, Dark",
-        "db": "baselayers",
-        "host": "https://gc2.io",
-        "config": {
-            "maxZoom": 21,
-            "maxNativeZoom": 19,
-            "attribution": "&copy; SDFE & MapCentia ApS"
-        }
-    },
-    {"id": "osm", "name": "Open Street Map"},
-    {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
-    {"id": "googleStreets","name":"Google Street"},
-    {"id": "googleHybrid","name":"Google Hybrid"}
-  ]
+  "enabledPrints": ["frederiksberg-print"]
 }
