@@ -1,13 +1,40 @@
 {
   "schemata" : [
-    "286873d9-4607-4791-8c67-33c3a44a2434"   
+    "grundkort",
+    "plan",
+    "plansystemdk",
+    "stab",
+    "klima",
+    "jord",
+    "dai",
+    "bygning",
+    "beredskab",
+    "givetprej",
+    "komplan13",
+    "komplan17",
+    "kortforsyningen",
+    "seo",
+    "ssa",
+    "vand",
+    "vej",
+    "geus",
+    "forsyning",
+    "byrum",
+    "buo",
+    "affald",
+    "stab",
+    "kulturarvsstyrelsen",
+    "mobilitet",
+    "vejdirektoratet",
+    "job_vejdirektoratet",
+    "geodanmark",
+    "lois",
+    "dagi",
+    "dawa",
+    "job_kulturarvsstyrelsen"
   ],
   
-  "enabledExtensions": ["conflictSearch", "layerSearch", "skraafoto", "streetView", "session", "vectorLayers", "editor"],
+  "enabledExtensions": ["skraafoto", "streetView","brevflet"],
   
-  "enabledPrints": ["frederiksberg-print"],
-  
-  "searchConfig": {
-        "komkode": ["101", "147"]
-  }
+  "enabledPrints": ["frederiksberg-print"]
 }
