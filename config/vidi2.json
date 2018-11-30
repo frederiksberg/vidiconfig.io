@@ -38,7 +38,7 @@
   
   "enabledPrints": ["frederiksberg-print"],
   
-          baseLayers: [ // Set some baselayers
+   "baseLayers": [ // Set some baselayers
            {
                 "type" : "XYZ",
                 "url" : "http://54.229.79.223/v2/Vidi_teknisk_baggrundskort/{z}/{x}/{y}.png",
