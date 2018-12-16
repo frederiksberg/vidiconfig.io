@@ -1,6 +1,7 @@
 {
   "schemata" : [
-    "red_test"
+    "red_test",
+    "proj_anba14"
   ],
   
   "enabledExtensions": ["editor"],
