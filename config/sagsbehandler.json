@@ -1,7 +1,7 @@
 {
   "schemata" : [
     "tag:_sagsbehandler",
-    "stab"
+    "stab"  
   ],
   
   "enabledExtensions": [
@@ -9,7 +9,8 @@
     "conflictSearch",
     "skolevej",
     "isochrone",
-    "vidisearch"
+    "vidisearch",
+    "editor"
   ],
   
   "enabledPrints": ["frederiksberg-print"]
