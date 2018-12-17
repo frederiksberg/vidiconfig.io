@@ -1,0 +1,9 @@
+{ 
+  "enabledExtensions": [
+    "editor",
+    "session",
+    "vidisearch"
+   ],
+  
+  "enabledPrints": ["frederiksberg-print"]
+}
