@@ -4,7 +4,10 @@
     "proj_anba14"
   ],
   
-  "enabledExtensions": ["editor"],
+  "enabledExtensions": [
+    "editor",
+    "session"
+   ],
   
   "enabledPrints": ["frederiksberg-print"]
 }
