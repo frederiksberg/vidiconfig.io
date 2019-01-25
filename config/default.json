@@ -1,6 +1,5 @@
 {
     "schemata": [
-        "tag:institution",
         "web_default"
     ],
     "enabledExtensions": [
