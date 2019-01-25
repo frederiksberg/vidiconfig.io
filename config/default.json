@@ -7,8 +7,7 @@
         "conflictSearch",
         "skolevej",
         "isochrone",
-        "vidisearch",
-        "editor"
+        "vidisearch"
     ],
     "enabledPrints": [
         "frederiksberg-print"
