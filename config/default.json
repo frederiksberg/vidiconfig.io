@@ -1,0 +1,254 @@
+{
+    "schemata": [
+        "tag:institution",
+        "web_default"
+    ],
+    "enabledExtensions": [
+        "streetView",
+        "conflictSearch",
+        "skolevej",
+        "isochrone",
+        "vidisearch",
+        "editor"
+    ],
+    "enabledPrints": [
+        "frederiksberg-print"
+    ],
+    "baseLayers": [
+        {
+            "type": "XYZ",
+            "url": "http://54.229.79.223/v2/Vidi_teknisk_baggrundskort/{z}/{x}/{y}.png",
+            "id": "Tekniskkort",
+            "name": "Teknisk kort",
+            "description": "Tekniskkort FOT",
+            "attribution": "Frederiksberg Kommune",
+            "minZoom": 12,
+            "maxZoom": 21,
+            "maxNativeZoom": 20
+        },
+        {
+            "type": "XYZ",
+            "url": "http://54.229.79.223/v2/Vidi_lyst_baggrundskort/{z}/{x}/{y}.png",
+            "id": "Simpeltkort",
+            "name": "Simpelt teknisk kort",
+            "description": "Tekniskkort FOT",
+            "attribution": "Frederiksberg Kommune",
+            "minZoom": 12,
+            "maxZoom": 21,
+            "maxNativeZoom": 20
+        },
+        {
+            "id": "osm",
+            "name": "Open Street Map"
+        },
+        {
+            "id": "raster.frederiksberg_2018_rgb",
+            "name": "Ortofoto 2018",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2017_12_5cm",
+            "name": "Luftfoto 2017",
+            "db": "baselayers",
+            "host": "https://gc2.io",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE & MapCentia ApS"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2016_vest",
+            "name": "Ortofoto 2016",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2015",
+            "name": "Ortofoto 2015",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2014",
+            "name": "Ortofoto 2014",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2013",
+            "name": "Ortofoto 2013",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2012",
+            "name": "Ortofoto 2012",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2012_sommer",
+            "name": "Ortofoto 2012, sommer",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2011",
+            "name": "Ortofoto 2011",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2010",
+            "name": "Ortofoto 2010",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2009",
+            "name": "Ortofoto 2009",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2008",
+            "name": "Ortofoto 2008",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2007",
+            "name": "Ortofoto 2007",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2005",
+            "name": "Ortofoto 2005",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2003",
+            "name": "Ortofoto 2003",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_2001",
+            "name": "Ortofoto 2001",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "raster.frederiksberg_1954",
+            "name": "Ortofoto 1954",
+            "db": "frederiksberg",
+            "host": "http://gc2.frederiksberg.dk",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 21,
+                "attribution": "Frederiksberg Kommune"
+            }
+        },
+        {
+            "id": "geodk.bright",
+            "name": "GeoDanmark kort, Gråtoner",
+            "db": "baselayers",
+            "host": "https://gc2.io",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 19,
+                "attribution": "&copy; SDFE & MapCentia ApS"
+            }
+        },
+        {
+            "id": "geodk.terminal",
+            "name": "GeoDanmark kort, Dark",
+            "db": "baselayers",
+            "host": "https://gc2.io",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 19,
+                "attribution": "&copy; SDFE & MapCentia ApS"
+            }
+        }
+    ]
+}
