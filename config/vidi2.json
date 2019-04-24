@@ -169,6 +169,17 @@
                 "maxNativeZoom": 21,
                 "attribution": "Frederiksberg Kommune"
                 }
+            },
+            {
+                "id": "geodk.terminal",
+                "name": "GeoDanmark kort, Dark",
+                "db": "baselayers",
+                "host": "https://gc2.io",
+                "config": {
+                    "maxZoom": 21,
+                    "maxNativeZoom": 19,
+                    "attribution": "&copy; SDFE & MapCentia ApS"
+                }
             }
         ]
 }
