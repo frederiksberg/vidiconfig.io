@@ -9,7 +9,7 @@
         "streetView": {
             "mapillary": "https://mapillary.com/app/?z=17&username[]=gisfrb&panos=true"
         }
-    }
+    },
   "baseLayers": [
            {
                 "type" : "XYZ",
