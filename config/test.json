@@ -10,6 +10,7 @@
     }
   },
   "baseLayers": [
+    {"id": "osm", "name": "Open Street Map"},
     {
       "type" : "XYZ",
       "url" : "http://54.229.79.223/v2/Vidi_teknisk_baggrundskort/{z}/{x}/{y}.png",
@@ -32,7 +33,6 @@
       "maxZoom" : 21,
       "maxNativeZoom" : 20
     },
-    {"id": "osm", "name": "Open Street Map"},
     {
       "id": "raster.frederiksberg_2018_rgb", "name": "Ortofoto 2018", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
       "config": {
