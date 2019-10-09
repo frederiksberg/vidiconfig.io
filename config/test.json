@@ -1,8 +1,5 @@
 {
-  "schemata" : [
-    "web_default",
-    "tag:_sagsbehandler"
-  ],
+ 
   
   "enabledExtensions": ["skraafoto", "streetView", "brevflet"],
   
