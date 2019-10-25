@@ -21,7 +21,7 @@
             },
             {
                 "type" : "XYZ",
-                "url" : "https://th.frb-data.dk/Vidi_enkelt_baggrundskort/{z}/{x}/{y}.png",
+                "url" : "https://th.frb-data.dk/Vidi_lyst_baggrundskort/{z}/{x}/{y}.png",
                 "id" : "Simpeltkort",
                 "name" : "Simpelt teknisk kort",
                 "description" : "Tekniskkort FOT",
