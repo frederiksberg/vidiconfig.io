@@ -10,7 +10,7 @@
   "baseLayers": [
            {
                 "type" : "XYZ",
-                "url" : "http://54.229.79.223/v2/Vidi_teknisk_baggrundskort/{z}/{x}/{y}.png",
+                "url" : "https://th.frb-data.dk/Vidi_teknisk_baggrundskort/{z}/{x}/{y}.png",
                 "id" : "Tekniskkort",
                 "name" : "Teknisk kort",
                 "description" : "Tekniskkort FOT",
@@ -21,7 +21,7 @@
             },
             {
                 "type" : "XYZ",
-                "url" : "http://54.229.79.223/v2/Vidi_lyst_baggrundskort/{z}/{x}/{y}.png",
+                "url" : "https://th.frb-data.dk/Vidi_enkelt_baggrundskort/{z}/{x}/{y}.png",
                 "id" : "Simpeltkort",
                 "name" : "Simpelt teknisk kort",
                 "description" : "Tekniskkort FOT",
