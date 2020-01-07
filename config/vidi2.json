@@ -21,6 +21,17 @@
             },
             {"id": "osm", "name": "Open Street Map"},
             {
+                "type" : "XYZ",
+                "url" : "https://th.frb-data.dk/luftfoto2019/{z}/{x}/{y}.png",
+                "id" : "Tekniskkort",
+                "name" : "Teknisk kort",
+                "description" : "Tekniskkort FOT",
+                "attribution" : "Frederiksberg Kommune",
+                "minZoom" : 12,
+                "maxZoom" : 21,
+                "maxNativeZoom" : 20
+            },
+            {
             "id": "raster.frederiksberg_2018_rgb", "name": "Ortofoto 2018", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
             "config": {
                 "maxZoom": 21,
