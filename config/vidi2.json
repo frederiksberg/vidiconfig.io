@@ -22,7 +22,7 @@
             {"id": "osm", "name": "Open Street Map"},
             {
                 "type" : "XYZ",
-                "url" : "https://th.frb-data.dk/luftfoto2019/{z}/{x}/{y}.png",
+                "url" : "https://th.frb-data.dk/luftfoto2019_new/{z}/{x}/{y}.png",
                 "id" : "orto2019",
                 "name" : "Ortofoto 2019",
                 "description" : "Ortofoto 2019",
