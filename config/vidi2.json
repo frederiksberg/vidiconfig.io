@@ -21,17 +21,6 @@
             },
             {"id": "osm", "name": "Open Street Map"},
             {
-                "type" : "XYZ",
-                "url" : "https://th.frb-data.dk/luftfoto2019_new/{z}/{x}/{y}.png",
-                "id" : "orto2019",
-                "name" : "Ortofoto 2019",
-                "description" : "Ortofoto 2019",
-                "attribution" : "Ortofoto 2019, GeoDanmark",
-                "minZoom" : 12,
-                "maxZoom" : 21,
-                "maxNativeZoom" : 20
-            },
-            {
             "id": "raster.frederiksberg_2018_rgb", "name": "Ortofoto 2018", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
             "config": {
                 "maxZoom": 21,
