@@ -21,12 +21,15 @@
             },
             {"id": "osm", "name": "Open Street Map"},
             {
-              "id": "raster.frederiksberg_2019", "name": "Ortofoto 2019", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
-              "config": {
-                  "maxZoom": 21,
-                  "maxNativeZoom": 21,
-                  "attribution": "Frederiksberg Kommune"
-               }
+                "id": "luftfotoserier.geodanmark_2019_12_5cm",
+                "name": "Ortofoto 2019",
+                "db": "baselayers",
+                "host": "https://gc2.io",
+                "config": {
+                    "maxZoom": 21,
+                    "maxNativeZoom": 20,
+                    "attribution": "&copy; SDFE & MapCentia ApS"
+                }
             },
             {
             "id": "raster.frederiksberg_2018_rgb", "name": "Ortofoto 2018", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
@@ -36,17 +39,17 @@
                 "attribution": "Frederiksberg Kommune"
                 }
             },
-                {
-                    "id": "luftfotoserier.geodanmark_2017_12_5cm",
-                    "name": "Ortofoto 2017",
-                    "db": "baselayers",
-                    "host": "https://gc2.io",
-                    "config": {
-                        "maxZoom": 21,
-                        "maxNativeZoom": 20,
-                        "attribution": "&copy; SDFE & MapCentia ApS"
-                    }
-                },
+            {
+                "id": "luftfotoserier.geodanmark_2017_12_5cm",
+                "name": "Ortofoto 2017",
+                "db": "baselayers",
+                "host": "https://gc2.io",
+                "config": {
+                    "maxZoom": 21,
+                    "maxNativeZoom": 20,
+                    "attribution": "&copy; SDFE & MapCentia ApS"
+                }
+            },
             {
             "id": "raster.frederiksberg_2016_vest", "name": "Ortofoto 2016", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
             "config": {
