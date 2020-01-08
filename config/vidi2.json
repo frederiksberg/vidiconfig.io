@@ -21,6 +21,14 @@
             },
             {"id": "osm", "name": "Open Street Map"},
             {
+              "id": "raster.frederiksberg_2019", "name": "Ortofoto 2019", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
+              "config": {
+                  "maxZoom": 21,
+                  "maxNativeZoom": 21,
+                  "attribution": "Frederiksberg Kommune"
+               }
+            },
+            {
             "id": "raster.frederiksberg_2018_rgb", "name": "Ortofoto 2018", "db": "frederiksberg", "host": "http://gc2.frederiksberg.dk",
             "config": {
                 "maxZoom": 21,
