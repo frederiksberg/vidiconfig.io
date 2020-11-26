@@ -1,6 +1,6 @@
 [data-module-id="stateSnapshots"] {
   display: none;
 }
-#streetview-service-cowi {
+#streetView>div>div>div:nth-child(4) {
  display: none;
 }
