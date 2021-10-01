@@ -29,3 +29,10 @@
     color: rgb(0 0 0 / 84%);
     font-weight: bold;
 }
+#side-panel {
+    right: 0;
+    border: 0;
+    overflow: scroll;
+    height: calc(100vh - 30px);
+    background-color: #fbfbd9;
+}
