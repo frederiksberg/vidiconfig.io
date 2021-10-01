@@ -1,0 +1,27 @@
+[data-module-id="stateSnapshots"] {
+  display: inline;
+}
+#streetView>div>div>div:nth-child(5) {
+ display: none;
+}
+
+.modal-content {
+    -webkit-box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%);
+    box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    border: none;
+    background-color: yellow;
+}
+
+
+.modal-content .modal-header {
+    border-bottom: none;
+    display: none;
+    padding: 24px 24px 0;
+}
+
+.modal-content .modal-body {
+    padding: 24px 24px 16px;
+    font-size: xx-large;
+}
+
