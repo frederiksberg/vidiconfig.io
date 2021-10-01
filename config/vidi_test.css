@@ -24,4 +24,8 @@
     padding: 24px 24px 16px;
     font-size: xx-large;
 }
-
+.navbar, .navbar.navbar-default {
+    background-color: #fffe04;
+    color: rgb(0 0 0 / 84%);
+    font-weight: bold;
+}
