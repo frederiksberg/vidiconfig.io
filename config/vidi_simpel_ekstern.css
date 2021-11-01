@@ -10,26 +10,12 @@
   display: none;
 }
 
-/*
-
-.leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-control-measurements{
-  display: none;
-}
-
-
-.leaflet-control-measurements{
-  display: none;
-}
-*/
+/* Fjerner måleværktøj */
 [class="js-measurements-control"] {
   display: none;
 }
 
-/*
-[class="leaflet-control-measurements"] {
+/* Fjerner ryd-knappen */
+[class="leaflet-clear-map"] {
   display: none;
 }
-.modal-body, .tab-content .tab-pane, .tab-content.main-content {
-    height: 100%;
-    background-color: #fbfbd9;
-}*/
