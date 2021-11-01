@@ -4,3 +4,8 @@
 #streetView>div>div>div:nth-child(5) {
  display: none;
 }
+
+
+[data-module-id="stateSnapshots"] {
+  display: none;
+}
