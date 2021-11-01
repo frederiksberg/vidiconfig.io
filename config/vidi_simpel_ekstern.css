@@ -1,11 +1,18 @@
-#stateSnapshots {
- display: none;
-}
-#streetView>div>div>div:nth-child(5) {
- display: none;
-}
-
-
 [data-module-id="stateSnapshots"] {
   display: none;
 }
+[data-module-id="draw"] {
+  display: none;
+}
+
+
+[data-module-id="draw"] {
+  display: none;
+}
+
+
+[class="leaflet-bar-part leaflet-bar-part-single js-measurements-control"] {
+  display: none;
+}
+
+
