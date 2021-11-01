@@ -10,6 +10,10 @@
   display: none;
 }
 
+[class="leaflet-bar-part leaflet-bar-part-single js-measurements-control"] {
+  display: none;
+}
+
 
 .leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-control-measurements{
   display: none;
