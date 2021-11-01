@@ -11,8 +11,12 @@
 }
 
 
-[class="leaflet-bar-part leaflet-bar-part-single js-measurements-control"] {
+.leaflet-bar-part .leaflet-bar-part-single {
   display: none;
 }
 
 
+.modal-body, .tab-content .tab-pane, .tab-content.main-content {
+    height: 100%;
+    background-color: #fbfbd9;
+}
