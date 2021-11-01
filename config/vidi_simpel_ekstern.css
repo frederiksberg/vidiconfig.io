@@ -11,11 +11,15 @@
 }
 
 /* Fjerner måleværktøj */
-[class="js-measurements-control"] {
+/*[class="js-measurements-control"] {
   display: none;
-}
+}*/
 
 /* Fjerner ryd-knappen */
 [class="leaflet-clear-map"] {
+  display: none;
+}
+
+[class="leaflet-control-measurements"] {
   display: none;
 }
