@@ -33,7 +33,7 @@
 [class="leaflet-bar leaflet-control leaflet-control-custom leaflet-control-measurements"] {
   display: none;
 }
-
-.tab-content>.active {
-    display: block;
+/* Forsøg på at vise legend fra start */
+[class="dialog-bottom fade-then-dragging"] {
+  display: block;
 }
