@@ -1,4 +1,4 @@
-#stateSnapshots>div>div>div:nth-child(5) {
+#stateSnapshots {
  display: none;
 }
 #streetView>div>div>div:nth-child(5) {
