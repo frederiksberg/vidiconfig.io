@@ -11,7 +11,10 @@
 }
 
 /* Fjerner ryd-knappen */
-.leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-clear-map{
+[class="leaflet-bar-part leaflet-bar-part-single"] {
+  display: none;
+}
+[class="leaflet-bar leaflet-control leaflet-control-custom leaflet-clear-map"] {
   display: none;
 }
 
