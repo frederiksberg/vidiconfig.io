@@ -1,3 +1,6 @@
 #stateSnapshots>div>div>div:nth-child(5) {
  display: none;
 }
+#streetView>div>div>div:nth-child(5) {
+ display: none;
+}
