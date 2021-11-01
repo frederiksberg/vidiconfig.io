@@ -20,6 +20,11 @@
 }
 
 
+.leaflet-control-measurements{
+  display: none;
+}
+
+
 .modal-body, .tab-content .tab-pane, .tab-content.main-content {
     height: 100%;
     background-color: #fbfbd9;
