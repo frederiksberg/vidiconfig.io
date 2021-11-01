@@ -33,3 +33,7 @@
 [class="leaflet-bar leaflet-control leaflet-control-custom leaflet-control-measurements"] {
   display: none;
 }
+
+.tab-content>.active {
+    display: block;
+}
