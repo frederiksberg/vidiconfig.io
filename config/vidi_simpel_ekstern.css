@@ -11,7 +11,7 @@
 }
 
 /* Fjerner ryd-knappen */
-.leaflet-control-locate leaflet-bar leaflet-control{
+.leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-clear-map{
   display: none;
 }
 
