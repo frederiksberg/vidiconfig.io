@@ -11,7 +11,7 @@
 }
 
 
-.leaflet-bar-part .leaflet-bar-part-single {
+.leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-control-measurements{
   display: none;
 }
 
