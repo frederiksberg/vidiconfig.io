@@ -10,3 +10,8 @@
 textarea {
   height: 150px;
 }
+
+[class="rdtPicker" ] {
+    margin-right: 0px;
+    right: 5px;
+}
