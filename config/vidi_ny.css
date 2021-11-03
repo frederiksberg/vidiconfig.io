@@ -7,9 +7,13 @@
 [class="where-clause-field textarea" ] {
   heigh:100px ;
 }
-textarea {
+
+[class="where-clause-field" ] {
+   textarea {
   height: 150px;
 }
+}
+
 
 [class="rdtPicker" ] {
     margin-right: 0px;
