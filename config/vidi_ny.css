@@ -10,8 +10,10 @@
 
 [class="where-clause-field" ] {
    textarea {
+     element.style {
   height: 150px;
 }
+     }
 }
 
 
