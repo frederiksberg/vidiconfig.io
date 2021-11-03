@@ -1,0 +1,6 @@
+[data-module-id="stateSnapshots"] {
+  display: inline;
+}
+#streetView>div>div>div:nth-child(5) {
+ display: none;
+}
