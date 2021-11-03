@@ -7,3 +7,6 @@
 [class="where-clause-field textarea" ] {
   heigh:100px ;
 }
+textarea {
+  height: 150px;
+}
