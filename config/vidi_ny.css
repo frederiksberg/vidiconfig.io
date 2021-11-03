@@ -4,3 +4,6 @@
 #streetView>div>div>div:nth-child(5) {
  display: none;
 }
+[class="where-clause-field textarea" ] {
+  heigh:100px ;
+}
