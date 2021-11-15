@@ -37,3 +37,11 @@
 [class="dialog-bottom fade-then-dragging"] {
   display: block;
 }
+
+/* Lag overskrift i fed og sort */
+.checkbox label, .radio label, label {
+    font-size: 20px;
+    line-height: 1.42857143;
+    color: #060606;
+    font-weight: 800;
+}
