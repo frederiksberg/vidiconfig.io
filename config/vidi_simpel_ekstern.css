@@ -45,3 +45,10 @@
     color: #060606;
     font-weight: 800;
 }
+
+
+/* Tekst på overskrifter i grupper */
+.panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    color: black;
+    font-weight: 400;
+}
