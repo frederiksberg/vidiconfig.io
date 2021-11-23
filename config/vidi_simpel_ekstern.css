@@ -57,8 +57,16 @@
     right:50%;
 }
 
+/* Tekst på tællere til lag */
+.panel-default>.panel-heading .badge {
+    color: #f5f5f5;
+    font-size: 15px;
+    background-color: #333;
+}
+
 /* Tekst på overskrifter i grupper */
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     color: black;
     font-weight: 400;
+   font-size: 20px;
 }
