@@ -77,10 +77,11 @@
     background-color: #333;
 }
 
-/*Skriftstørrelse lagnavne*/
+/*Skriftstørrelse og farve på lagnavne*/
 .panel-title, .panel>.list-group, .panel>.panel-collapse>.list-group, .panel>.panel-collapse>.table, .panel>.table, .panel>.table-responsive, .panel>.table-responsive>.table {
     margin-bottom: 0;
     font-size: 16px;
+    color: #000;
 }
 
 /* Tekst på overskrifter i grupper */
