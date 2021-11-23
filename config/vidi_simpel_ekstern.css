@@ -62,6 +62,14 @@
     height: auto;
 }
 
+/* Størrelse på ikoner */
+#side-panel ul li .material-icons {
+    margin-right: 17px;
+    padding: 2px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
 /* Tekst på tællere til lag */
 .panel-default>.panel-heading .badge {
     color: #f5f5f5;
@@ -73,5 +81,5 @@
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     color: black;
     font-weight: 400;
-   font-size: 20px;
+   font-size: 18px;
 }
