@@ -53,8 +53,13 @@
     border-radius: 2px;
     border: none;
     width: 1000px;
-    height: 800px;
+    height: auto;
     right:50%;
+}
+
+.modal-content .modal-body {
+    padding: 24px 24px 16px;
+    height: auto;
 }
 
 /* Tekst på tællere til lag */
