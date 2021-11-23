@@ -77,6 +77,12 @@
     background-color: #333;
 }
 
+/*Skriftstørrelse lagnavne*/
+.panel-title, .panel>.list-group, .panel>.panel-collapse>.list-group, .panel>.panel-collapse>.table, .panel>.table, .panel>.table-responsive, .panel>.table-responsive>.table {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
 /* Tekst på overskrifter i grupper */
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     color: black;
