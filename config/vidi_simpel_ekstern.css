@@ -46,6 +46,15 @@
     font-weight: 800;
 }
 
+/* Pop up */
+.modal-content {
+    /* -webkit-box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%); */
+    box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    border: none;
+    width: 1000px;
+    height: 800px;
+}
 
 /* Tekst på overskrifter i grupper */
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
