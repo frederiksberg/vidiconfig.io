@@ -102,3 +102,10 @@
     font-weight: 400;
    font-size: 18px;
 }
+
+
+/* Fjerner besked i toppen af modal/popup*/
+.modal-title {
+   
+    display: none;
+}
