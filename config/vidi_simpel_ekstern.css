@@ -105,7 +105,6 @@
 
 
 /* Fjerner besked i toppen af modal/popup*/
-.modal-title {
-   
+.modal-content .modal-header {
     display: none;
 }
