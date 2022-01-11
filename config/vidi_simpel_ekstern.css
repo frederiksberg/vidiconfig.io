@@ -108,3 +108,10 @@
 .modal-content .modal-header {
     display: none;
 }
+
+
+/* Farve til bjælker */
+.navbar, .navbar.navbar-default {
+    background-color: #00502d;
+    color: rgba(255,255,255);
+}
