@@ -40,7 +40,7 @@
 
 /* Lag overskrift i fed og sort */
 .checkbox label, .radio label, label {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.42857143;
     color: #060606;
     font-weight: 800;
@@ -66,7 +66,7 @@
 #side-panel ul li .material-icons {
     margin-right: 17px;
     padding: 2px;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 50%;
 }
 
