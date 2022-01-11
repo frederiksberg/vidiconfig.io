@@ -82,7 +82,7 @@
 #side-panel {
     right: 0;
     border: 0;
-    font-size: 20px;
+    font-size: 18px;
     overflow: scroll;
     height: calc(100vh - 30px);
     background-color: #fff;
