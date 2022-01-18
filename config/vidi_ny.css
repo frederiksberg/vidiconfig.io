@@ -31,7 +31,7 @@ where-clause-field .form-group textarea{
 }
 
 
-where-clause-field  textarea{
-  width: 100%;
- height: 150px;
+.form-group textarea {
+    resize: none;
+    height: 150px!important;
 }
