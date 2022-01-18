@@ -4,9 +4,7 @@
 #streetView>div>div>div:nth-child(5) {
  display: none;
 }
-[class="where-clause-field textarea" ] {
-  heigh:100px ;
-}
+
 
 [class="where-clause-field" ] {
    textarea {
@@ -18,4 +16,11 @@
 [class="rdtPicker" ] {
     margin-right: 0px;
     right: 5px;
+}
+
+/* Forsøg på at gøre filteredit større */
+
+
+.form-group textarea{
+  height:150px ;
 }
