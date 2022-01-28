@@ -115,3 +115,11 @@
     background-color: #00502d;
     color: rgba(255,255,255);
 }
+
+
+/* Rykker knapper i velkomstbillede. Nødløsning ift. optimering til mobiler */
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-right: 50%;
+    margin-left: 5px;
+}
