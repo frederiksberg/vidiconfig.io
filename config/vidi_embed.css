@@ -117,17 +117,17 @@
     color: rgba(255,255,255);
 }
 
-.form-group {    
-    display: block;
-    position: sticky;
-    width: 90%;
-    top: 0;
-    background: white;
-}
 
 /* Rykker knapper i velkomstbillede. Nødløsning ift. optimering til mobiler */
 .modal-footer .btn+.btn {
     margin-bottom: 0;
     margin-right: 50%;
     margin-left: 5px;
+}
+
+.form-group {    
+    display: block !important;
+    position: sticky;
+    top: 0;
+    background: white;
 }
