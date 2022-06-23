@@ -10,6 +10,11 @@
   display: none;
 }
 
+.leaflet-popup-content-wrapper{
+    padding:1px;
+    text-align:right
+}
+
 /* Fjerner ryd-knappen */
 [class="leaflet-bar-part leaflet-bar-part-single"] {
   display: none;
