@@ -97,7 +97,7 @@
 /*Skriftstørrelse og farve på lagnavne*/
 .panel-title, .panel>.list-group, .panel>.panel-collapse>.list-group, .panel>.panel-collapse>.table, .panel>.table, .panel>.table-responsive, .panel>.table-responsive>.table {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 12px;
     color: #000;
    font-weight: 400;
 }
@@ -106,7 +106,7 @@
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     color: black;
     font-weight: 400;
-   font-size: 18px;
+   font-size: 15px;
 }
 
 
