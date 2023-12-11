@@ -41,12 +41,12 @@
 
 /* Forsøg på at nedskalere legenden */
 .legend-img {
-  transform: scale(0.85); /* Equal to scaleX(0.7) scaleY(0.7) */
+  transform: scale(0.85); /* Equal to scaleX(0.85) scaleY(0.85) */
 }
 
 /* Lag overskrift i fed og sort */
 .checkbox label, .radio label, label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.42857143;
     color: #060606;
     font-weight: 800;
@@ -106,7 +106,7 @@
 .panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
     color: black;
     font-weight: 400;
-   font-size: 15px;
+   font-size: 12px;
 }
 
 
