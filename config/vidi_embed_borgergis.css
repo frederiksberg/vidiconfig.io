@@ -44,14 +44,6 @@
   transform: scale(0.85); /* Equal to scaleX(0.85) scaleY(0.85) */
 }
 
-/* Lag overskrift i fed og sort */
-.checkbox label, .radio label, label {
-    font-size: 10px;
-    line-height: 1;
-    color: #060606;
-    font-weight: 800;
-}
-
 /* Pop up */
 .modal-content {
     /* -webkit-box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%); */
