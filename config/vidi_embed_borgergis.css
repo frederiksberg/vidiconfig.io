@@ -39,15 +39,15 @@
   display: block;
 }
 
-/* Forsøg på at nedskalere legenden */
+/* Nedskalere legenden */
 .legend-img {
   transform: scale(0.85); /* Equal to scaleX(0.85) scaleY(0.85) */
 }
 
 /* Lag overskrift i fed og sort */
 .checkbox label, .radio label, label {
-    font-size: 12px;
-    line-height: 1.42857143;
+    font-size: 10px;
+    line-height: 1;
     color: #060606;
     font-weight: 800;
 }
