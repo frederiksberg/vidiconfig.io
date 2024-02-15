@@ -123,3 +123,7 @@
     margin-right: 50%;
     margin-left: 5px;
 }
+
+.checkbox-material {
+  display: none;
+}
