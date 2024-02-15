@@ -1,0 +1,125 @@
+[data-module-id="stateSnapshots"] {
+  display: none;
+}
+[data-module-id="draw"] {
+  display: none;
+}
+
+
+[data-module-id="draw"] {
+  display: none;
+}
+
+/* Fjerner ryd-knappen */
+[class="leaflet-bar-part leaflet-bar-part-single"] {
+  display: none;
+}
+[class="leaflet-bar leaflet-control leaflet-control-custom leaflet-clear-map"] {
+  display: none;
+}
+
+/* En af dem her fjerner målværktøjet */
+[class="leaflet-control-measurements"] {
+  display: none;
+}
+
+.leaflet-bar .leaflet-control .leaflet-control-custom .leaflet-control-measurements{
+  display: none;
+}
+
+[class="leaflet-bar-part leaflet-bar-part-single js-measurements-control"] {
+  display: none;
+}
+[class="leaflet-bar leaflet-control leaflet-control-custom leaflet-control-measurements"] {
+  display: none;
+}
+/* Forsøg på at vise legend fra start */
+[class="dialog-bottom fade-then-dragging"] {
+  display: block;
+}
+
+/* Lag overskrift i fed og sort */
+.checkbox label, .radio label, label {
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #060606;
+    font-weight: 800;
+}
+
+/* Pop up */
+.modal-content {
+    /* -webkit-box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%); */
+    box-shadow: 0 27px 24px 0 rgb(0 0 0 / 20%), 0 40px 77px 0 rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    border: none;
+    width: 1000px;
+    height: auto;
+    right:50%;
+}
+
+.modal-content .modal-body {
+    padding: 24px 24px 16px;
+    height: auto;
+}
+
+/* Størrelse på ikoner */
+#side-panel ul li .material-icons {
+    margin-right: 17px;
+    padding: 2px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+/* Tekst på tællere til lag */
+.panel-default>.panel-heading .badge {
+    color: #f5f5f5;
+    font-size: 15px;
+    background-color: #333;
+}
+
+
+/* Skriftstørrelse sidepanel */
+#side-panel {
+    right: 0;
+    border: 0;
+    font-size: 18px;
+    overflow: scroll;
+    height: calc(100vh - 30px);
+    background-color: #fff;
+}
+
+/*Skriftstørrelse og farve på lagnavne*/
+.panel-title, .panel>.list-group, .panel>.panel-collapse>.list-group, .panel>.panel-collapse>.table, .panel>.table, .panel>.table-responsive, .panel>.table-responsive>.table {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #000;
+   font-weight: 400;
+}
+
+/* Tekst på overskrifter i grupper */
+.panel-heading>.dropdown .dropdown-toggle, .panel-title, .panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a {
+    color: black;
+    font-weight: 400;
+   font-size: 12px;
+}
+
+
+/* Fjerner besked i toppen af modal/popup*/
+.modal-content .modal-header {
+    display: none;
+}
+
+
+/* Farve til bjælker */
+.navbar, .navbar.navbar-default {
+    background-color: #00502d;
+    color: rgba(255,255,255);
+}
+
+
+/* Rykker knapper i velkomstbillede. Nødløsning ift. optimering til mobiler */
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-right: 50%;
+    margin-left: 5px;
+}
