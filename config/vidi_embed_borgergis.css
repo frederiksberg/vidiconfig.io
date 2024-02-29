@@ -41,7 +41,7 @@
 
 /* Nedskalere legenden */
 .legend-img {
-  transform: scale(0.75); /* Equal to scaleX(0.85) scaleY(0.85) */
+  transform: scale(0.75); /* Equal to scaleX(0.75) scaleY(0.75) */
 }
 
 /* Pop up */
