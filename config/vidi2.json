@@ -7,7 +7,7 @@
   "enabledExtensions": ["skraafoto", "streetView", "brevflet"],
   
   "enabledPrints": ["frederiksberg-print"],
-  "startUpModal": "<div><h3><b>Velkommen til Frederiksbergkortet!</b></h3></div><div><br>Kortet indeholder en bred vifte af kommunens data samt offentlige grunddata. I lagvælgeren i højre side finder du de forskellige data.</div><div><br>Har du brug for hjælp? Skriv til GIS@frederiksberg.dk</div><div><img src='https://gis.frederiksberg.dk/iotimage/hurtig_guide_til_test.png'  width='950' height=auto'></div>",
+  "startUpModal": "<div><h2><b>OBS</b></h2></div><div><br>Du bruger en forældet konfiguration af Vidi/MedarbejderGIS, der ikke bliver vedligeholdt. For at benytte den nye version, skal du bruge denne <b><a href=\"https://vidi.frederiksberg.dk/app/frederiksberg/?config=/api/v2/configuration/frederiksberg/configuration_basis_5fd76306e1727919922120.json#Tekniskkort/14/12.5151/55.6814/\">URL</a></b><br>Der findes desuden videovejledninger til systemet <b><a href=\"http://kortogdata.frederiksberg.dk/videoguides.html\">her</a></b><br>Har du brug for hjælp kan du kontakte GIS-teamet på gis@frederiksberg.dk</div>",
   "baseLayers": [
            {
                 "type" : "XYZ",
