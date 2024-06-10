@@ -7,6 +7,7 @@
   "enabledExtensions": ["skraafoto", "streetView", "brevflet"],
   
   "enabledPrints": ["frederiksberg-print"],
+  "startUpModal": "<div><h3><b>Velkommen til Frederiksbergkortet!</b></h3></div><div><br>Kortet indeholder en bred vifte af kommunens data samt offentlige grunddata. I lagvælgeren i højre side finder du de forskellige data.</div><div><br>Har du brug for hjælp? Skriv til GIS@frederiksberg.dk</div><div><img src='https://gis.frederiksberg.dk/iotimage/hurtig_guide_til_test.png'  width='950' height=auto'></div>",
   "baseLayers": [
            {
                 "type" : "XYZ",
