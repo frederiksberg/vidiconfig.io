@@ -1,127 +1,60 @@
 <style>
-    .history-control {
-        display: {{_displayHistory}};
-    }
-
-    .leaflet-control-locate {
-        display: {{_displayLocation}};
-    }
-
-    #offcanvasLayerControlBtn {
-        display: {{_displayLayer}};
-    }
-
-    .place-search {
-        display: {{_displaySearch}};
-    }
-
-    .legend-btn {
-        display: {{_displayLegend}};
-    }
-
-    .baselayer-toggle {
-        display: {{_displayBackground}};
-    }
-
-    .full-screen-btn {
-        display: {{_displayFullscreen}};
-    }
-
-    .about-btn {
-        display: {{_displayAbout}};
-    }
-
-    .reset-btn {
-        display: {{_displayReset}};
-    }
-
-    .leaflet-control-measurements {
-        display: {{_displayMeasurement}};
-    }
-
-    .leaflet-clear-map {
-        display: {{_displayClear}};
-    }
-
-    .leaflet-control-boxzoom {
-        display: {{_displayBox}};
-    }
-
-    .sign-in-btn {
-        display: {{_displaySignin}};
-    }
-
-    .leaflet-control-simpleMapScreenshoter {
-        display: {{_displayScreenshot}};
-    }
-
-    .navbar-brand {
-        display: {{_displayBrand}} !important;
-    }
-
-    .navbar-toggler {
-        display: {{_displayToggler}};
-    }
+    .history-control { display: {{_displayHistory}}; }
+    .leaflet-control-locate { display: {{_displayLocation}}; }
+    #offcanvasLayerControlBtn { display: {{_displayLayer}}; }
+    .place-search { display: {{_displaySearch}}; }
+    .legend-btn { display: {{_displayLegend}}; }
+    .baselayer-toggle { display: {{_displayBackground}}; }
+    .full-screen-btn { display: {{_displayFullscreen}}; }
+    .about-btn { display: {{_displayAbout}}; }
+    .reset-btn { display: {{_displayReset}}; }
+    .leaflet-control-measurements { display: {{_displayMeasurement}}; }
+    .leaflet-clear-map { display: {{_displayClear}}; }
+    .leaflet-control-boxzoom { display: {{_displayBox}}; }
+    .sign-in-btn { display: {{_displaySignin}}; }
+    .leaflet-control-simpleMapScreenshoter { display: {{_displayScreenshot}}; }
+    .navbar-brand { display: {{_displayBrand}} !important; }
+    .navbar-toggler { display: {{_displayToggler}}; }
 
     .btn-outline-secondary {
         --bs-btn-bg: rgba(255, 255, 255, 0.7) !important;
     }
 
-    /* Minimal legend style */
-    .legend-top-left {
+    /* --- Custom legend styles --- */
+    #custom-legend {
         position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1000;
-        max-width: 250px;
-        background: rgba(255, 255, 255, 0.85);
-        border: 1px solid #ccc;
+        top: 1rem;
+        left: 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.5rem;
         border-radius: 4px;
-        font-size: 0.85rem;
-        padding: 5px 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .legend-top-left .legend-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: bold;
-        margin-bottom: 4px;
-    }
-
-    .legend-top-left .legend-body {
-        max-height: 200px;
+        font-size: 0.9rem;
+        max-height: 40vh;
         overflow-y: auto;
+        box-shadow: none;
+        z-index: 10000;
+        min-width: 160px;
     }
-
-    .legend-top-left button {
-        background: none;
-        border: none;
+    #custom-legend h6 {
+        margin-top: 0;
+        font-weight: bold;
         font-size: 1rem;
-        padding: 0;
-        margin: 0;
-        cursor: pointer;
     }
 </style>
 
-<!-- map -->
+<!-- Map Container -->
 <div id="pane" class="embed">
     <div id="container">
         <div id="map">
-            <!-- Updated legend position and style -->
-            <div id="legend-toast" class="legend-top-left">
-                <div class="legend-header">
-                    <span>{{Legend}}</span>
-                    <button type="button" onclick="this.parentElement.parentElement.style.display='none';" aria-label="Close">×</button>
-                </div>
-                <div class="legend-body" id="legend-toast-body"></div>
+            <!-- Custom Legend -->
+            <div id="custom-legend">
+                <h6>{{Legend}}</h6>
+                <div id="legend-toast-body"></div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Remaining modals and nav (unchanged) -->
 <!-- About Modal -->
 <div class="modal embed" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modalLabel">
     <div class="modal-dialog modal-fullscreen" role="document">
@@ -151,6 +84,113 @@
     <div class="offcanvas-body" id="login-modal-body"></div>
 </div>
 
-<!-- Navigation bar and additional offcanvas content (unchanged) -->
-<!-- [Insert unchanged content here from your original template] -->
+<nav class="navbar navbar-expand-sm bg-transparent fade-then-dragging pointer-event pe-none embed">
+    <div class="container-fluid">
+        <a class="navbar-brand d-none d-md-inline"><span>{{{brandName}}}</span></a>
+        <div class="navbar-nav flex-row gap-1 flex-grow-1 me-2">
+            <button id="offcanvasLayerControlBtn" class="btn btn-primary text-nowrap pe-auto" type="button">
+                <i class="bi bi-list d-md-none"></i><span class="d-none d-md-inline">Menu</span>
+                <i class="bi bi-arrow-bar-right"></i><i class="bi bi-arrow-bar-left d-none"></i>
+            </button>
+        </div>
+        <button class="navbar-toggler ms-auto pe-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end flex-grow-0 pe-auto mt-2 mt-sm-0 gap-2" id="navbarSupportedContent">
+            <div class="mt-3 mt-sm-0 place-search nav-item" role="search">
+                <div class="places">
+                    <div class="input-group">
+                        <input class="custom-search typeahead form-control" type="text" placeholder="{{Address}}">
+                        <button class="btn btn-secondary searchclear" type="button"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
+<!-- Offcanvas panels -->
+<div class="fade-then-dragging embed">
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="mainLayerOffcanvas" style="z-index: 999990">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="p-2 ">
+                <div id="layers"></div>
+                <div id="layersAlt"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasLayerDesc" style="z-index: 999991">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas-layer-desc-container"></div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasInfo" style="z-index: 999992">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Info</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas-info-container"></div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvas-edit-start" style="z-index: 999993">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Edit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"></div>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom" data-bs-backdrop="false" tabindex="-1" id="offcanvas-edit-bottom" style="height: 50vh">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"></div>
+    </div>
+</div>
+
+<!-- Hidden legend content to pull from -->
+<div id="legend-content" class="d-none embed">
+    <div id="legend" class="legend"></div>
+</div>
+
+<!-- Toasts -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3 me-sm-5 embed">
+    <div id="info-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex"><div class="toast-body" id="info-toast-body"></div></div>
+    </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 999999999">
+    <div id="update-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">{{New version available}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="d-flex">
+            <div class="toast-body">
+                <button class='btn btn-primary' id='update-app-btn'>{{Update}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Legend loading script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var hiddenLegend = document.querySelector('#legend-content #legend');
+        var visibleLegend = document.querySelector('#legend-toast-body');
+        if (hiddenLegend && visibleLegend) {
+            visibleLegend.innerHTML = hiddenLegend.innerHTML;
+        }
+    });
+</script>
