@@ -66,15 +66,30 @@
     .btn-outline-secondary {
         --bs-btn-bg: rgba(255, 255, 255, 0.7) !important;
     }
+
+    /* 🎯 Legend positioning and sizing adjustments */
+    #legend-toast {
+        max-width: 260px;
+        font-size: 0.85rem;
+    }
+
+    #legend-toast .toast-body {
+        padding: 0.5rem;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    #legend-toast .toast-header {
+        padding: 0.4rem 0.75rem;
+    }
 </style>
 
 <!-- map -->
 <div id="pane" class="embed">
     <div id="container">
         <div id="map">
-            <!-- 🔁 Modified from bottom-end to top-start -->
-            <div class="toast-container position-fixed top-0 start-0 p-3 mt-5 ms-sm-5">
-                <div id="legend-toast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-container position-fixed top-0 start-0 p-3 ps-sm-5 pt-sm-5">
+                <div id="legend-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
                         <strong class="me-auto">{{Legend}}</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -86,6 +101,7 @@
         </div>
     </div>
 </div>
+<!-- (Rest of the code remains unchanged) -->
 
 <!-- About Modal -->
 <div class="modal embed" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modalLabel">
