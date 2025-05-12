@@ -72,17 +72,19 @@
 <div id="pane" class="embed">
     <div id="container">
         <div id="map">
-            <!-- 🟢 Updated legend: moved to top-left and made smaller -->
-            <div class="toast-container position-fixed top-0 start-0 m-1" style="z-index: 999999;">
-                <div id="legend-toast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: 240px; font-size: 0.85rem;">
-                    <div class="toast-header py-1 px-2">
-                        <strong class="me-auto">{{Legend}}</strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
-                    </div>
-                    <div class="toast-body p-2 overflow-auto" id="legend-toast-body" style="max-height: 160px;">
-                    </div>
-                </div>
-            </div>
+<!-- Updated Legend -->
+<div class="toast-container position-fixed top-0 start-0" style="z-index: 999999; margin: 0; padding: 0;">
+    <div id="legend-toast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true"
+         style="max-width: 220px; font-size: 0.8rem; margin: 0;">
+        <div class="toast-header py-1 px-2">
+            <strong class="me-auto">{{Legend}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
+        </div>
+        <div class="toast-body p-2 overflow-auto" id="legend-toast-body" style="max-height: 140px;">
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 </div>
