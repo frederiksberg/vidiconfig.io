@@ -74,18 +74,24 @@
         <div id="map">
 <!-- Updated Legend -->
 <div class="toast-container position-fixed top-0 start-0" style="z-index: 999999; margin: 0; padding: 0;">
-    <div id="legend-toast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true"
-         style="max-width: 220px; font-size: 0.8rem; margin: 0;">
-        <div class="toast-header py-1 px-2">
-            <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
-        </div>
-        <div class="toast-body p-2 overflow-auto" id="legend-toast-body" style="max-height: 140px;">
-        </div>
+  <div id="legend-toast" class="toast show m-2 border-0 shadow-sm" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false" style="max-width: 220px; font-size: 0.8rem;">
+    <div class="toast-header py-1 px-2">
+      <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
     </div>
-</div>
-
+    <div class="toast-body overflow-auto p-2" style="max-height: 300px">
+      {{#each visibleLayers}}
+        <div class="mb-2">
+          <div><strong>{{this.title}}</strong></div>
+          {{#each this.classes}}
+            <div class="d-flex align-items-center mb-1 ms-2">
+              <div class="me-2" style="width: 16px; height: 16px; background-color: {{this.color}}; border: 1px solid #ccc;"></div>
+              <div>{{this.label}}</div>
+            </div>
+          {{/each}}
         </div>
+      {{/each}}
     </div>
+  </div>
 </div>
 
 <!-- About Modal -->
