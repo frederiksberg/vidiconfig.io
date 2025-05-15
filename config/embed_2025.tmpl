@@ -66,10 +66,6 @@
     .btn-outline-secondary {
         --bs-btn-bg: rgba(255, 255, 255, 0.7) !important;
     }
-
-    #legend-toast-body input[type="checkbox"] {
-        display: none !important;
-    }
 </style>
 
 <!-- map -->
@@ -85,14 +81,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
         </div>
         <div class="toast-body p-2 overflow-auto" id="legend-toast-body" style="max-height: 140px;">
-  {{#each legendItems}}
-    <div class="d-flex align-items-center mb-1">
-      <div class="me-2" style="width: 14px; height: 14px; background-color: {{this.color}}; border: 1px solid #ccc;"></div>
-      <div style="font-size: 0.8rem;">{{this.label}}</div>
-    </div>
-  {{/each}}
-</div>
-
+        </div>
     </div>
 </div>
 
