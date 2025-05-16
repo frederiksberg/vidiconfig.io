@@ -71,6 +71,31 @@
         display: none !important;
     }
 
+/* Remove leftover checkbox space in legend */
+    #legend-toast-body .form-check {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    }
+
+ #legend-toast-body .form-check-input {
+    display: none !important;
+  }
+
+  #legend-toast-body .form-check-label {
+    margin-left: 0 !important;
+  }
+
+  /* Extra fallback if structure doesn't use .form-check */
+  #legend-toast-body > div {
+    padding-left: 4px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Reduce space between icon and label */
+  #legend-toast-body div > div:first-child {
+    margin-right: 6px !important;
+  }
+
 </style>
 
 <!-- map -->
