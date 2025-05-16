@@ -89,6 +89,8 @@
   #legend-toast-body > div {
     padding-left: 4px !important;
     margin-left: 0 !important;
+    margin-bottom: 2px !important;
+    margin-top: 0 !important;
   }
 
   /* Reduce space between icon and label */
@@ -103,6 +105,21 @@
 
   #legend-toast {
     padding-right: 8px !important;
+  }
+
+/* Override Bootstrap spacing if used */
+  #legend-toast-body .mb-2 {
+    margin-bottom: 2px !important;
+  }
+
+  #legend-toast-body .mt-3 {
+    margin-top: 0 !important;
+  }
+
+  #legend-toast-body > div > div {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 
 </style>
