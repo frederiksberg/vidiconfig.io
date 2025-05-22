@@ -98,9 +98,10 @@
     margin-right: 6px !important;
   }
 
- /* Reduce right space */
+ /* Reduce right space and tighten spacing between lines in legend */
   #legend-toast-body {
     padding-right: 4px !important;
+    line-height: 1.2 !important;
   }
 
   #legend-toast {
@@ -121,6 +122,17 @@
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
   }
+
+/* Reduce vertical space between legend groups/items */
+#legend-toast-body > div {
+    margin-bottom: 0 !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+}
+
+#legend-toast-body > div + div {
+    margin-top: 0 !important;
+}
 
 </style>
 
