@@ -154,6 +154,25 @@
     display: none !important;
 }
 
+/* Remove extra spacing between legend items */
+#legend-toast-body .leaflet-control-legend-item {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    line-height: 1.2 !important;
+}
+
+/* Hide empty divs that may add spacing */
+#legend-toast-body .leaflet-control-legend-item:empty {
+    display: none !important;
+}
+
+/* Remove any <br> elements within the legend */
+#legend-toast-body br {
+    display: none !important;
+}
+
 </style>
 
 <!-- map -->
