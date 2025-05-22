@@ -195,6 +195,11 @@
     display: none !important;
 }
 
+/* Remove spacing caused by empty spacing divs inside the legend */
+#legend-toast-body .d-flex.flex-column:has(> div:empty) {
+  display: none !important;
+}
+
 </style>
 
 <!-- map -->
