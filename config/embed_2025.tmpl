@@ -134,6 +134,26 @@
     margin-top: 0 !important;
 }
 
+/* Aggressively remove vertical spacing in legend items */
+#legend-toast-body > div {
+    margin: 0 !important;
+    padding: 2px 0 !important;
+    line-height: 1.2 !important;
+}
+
+#legend-toast-body > div:empty {
+    display: none !important;
+}
+
+#legend-toast-body > div > div {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#legend-toast-body br {
+    display: none !important;
+}
+
 </style>
 
 <!-- map -->
