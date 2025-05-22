@@ -195,9 +195,17 @@
         display: none !important;
 }
 
-/* Remove spacing caused by empty spacing divs inside the legend */
-    #legend-toast-body .d-flex.flex-column:has(> div:empty) {
-  display: none !important;
+/* Fix unwanted spacing between legend items */
+    #legend-toast-body .d-flex.flex-column > div:empty {
+      display: none !important;
+}
+
+/* Remove margin and padding from empty containers */
+    #legend-toast-body .d-flex.flex-column {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      line-height: 0 !important;
 }
 
 </style>
