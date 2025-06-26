@@ -1,0 +1,377 @@
+<style> 
+    .history-control {
+        display: {{_displayHistory}};
+    }
+
+    .leaflet-control-locate {
+        display: {{_displayLocation}};
+    }
+
+    #offcanvasLayerControlBtn {
+        display: {{_displayLayer}};
+    }
+
+    .place-search {
+        display: {{_displaySearch}};
+    }
+
+    .legend-btn {
+        display: {{_displayLegend}};
+    }
+
+    .baselayer-toggle {
+        display: {{_displayBackground}};
+    }
+
+    .full-screen-btn {
+        display: {{_displayFullscreen}};
+    }
+
+    .about-btn {
+        display: {{_displayAbout}};
+    }
+
+    .reset-btn {
+        display: {{_displayReset}};
+    }
+
+    .leaflet-control-measurements {
+        display: {{_displayMeasurement}};
+    }
+
+    .leaflet-clear-map {
+        display: {{_displayClear}};
+    }
+
+    .leaflet-control-boxzoom {
+        display: {{_displayBox}};
+    }
+
+    .sign-in-btn {
+        display: {{_displaySignin}};
+    }
+
+    .leaflet-control-simpleMapScreenshoter {
+        display: {{_displayScreenshot}};
+    }
+
+    .navbar-brand {
+        display: {{_displayBrand}} !important;
+    }
+
+    .navbar-toggler {
+        display: {{_displayToggler}};
+    }
+
+    .btn-outline-secondary {
+        --bs-btn-bg: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    #legend-toast-body input[type="checkbox"] {
+        display: none !important;
+    }
+
+/* Remove leftover checkbox space in legend */
+    #legend-toast-body .form-check {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    }
+
+    #legend-toast-body .form-check-input {
+    display: none !important;
+  }
+
+    #legend-toast-body .form-check-label {
+    margin-left: 0 !important;
+  }
+
+  /* Extra fallback if structure doesn't use .form-check */
+    #legend-toast-body > div {
+    padding-left: 4px !important;
+    margin-left: 0 !important;
+    margin-bottom: 2px !important;
+    margin-top: 0 !important;
+  }
+
+  /* Reduce space between icon and label */
+    #legend-toast-body div > div:first-child {
+    margin-right: 6px !important;
+  }
+
+ /* Reduce right space and tighten spacing between lines in legend */
+    #legend-toast-body {
+    padding-right: 4px !important;
+    line-height: 1.2 !important;
+  }
+
+    #legend-toast {
+    padding-right: 8px !important;
+  }
+
+/* Override Bootstrap spacing if used */
+    #legend-toast-body .mb-2 {
+    margin-bottom: 2px !important;
+  }
+
+    #legend-toast-body .mt-3 {
+    margin-top: 0 !important;
+  }
+
+    #legend-toast-body > div > div {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+/* Reduce vertical space between legend groups/items */
+    #legend-toast-body > div {
+    margin-bottom: 0 !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+}
+
+    #legend-toast-body > div + div {
+    margin-top: 0 !important;
+}
+
+/* Aggressively remove vertical spacing in legend items */
+    #legend-toast-body > div {
+    margin: 0 !important;
+    padding: 2px 0 !important;
+    line-height: 1.2 !important;
+}
+
+    #legend-toast-body > div:empty {
+    display: none !important;
+}
+
+    #legend-toast-body > div > div {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+    #legend-toast-body br {
+    display: none !important;
+}
+
+/* Remove extra spacing between legend items */
+    #legend-toast-body .leaflet-control-legend-item {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    line-height: 1.2 !important;
+}
+
+/* Hide empty divs that may add spacing */
+    #legend-toast-body .leaflet-control-legend-item:empty {
+    display: none !important;
+}
+
+/* Remove any <br> elements within the legend */
+    #legend-toast-body br {
+    display: none !important;
+}
+
+/* Hide empty group headers in the legend */
+    #legend-toast-body .layergroup-title:empty {
+        display: none !important;
+}
+
+/* Reset margins and paddings for legend items */
+    #legend-toast-body div {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+}
+
+/* Hide empty divs within the legend */
+    #legend-toast-body div:empty {
+        display: none !important;
+}
+
+/* Remove any <br> tags within the legend */
+    #legend-toast-body br {
+        display: none !important;
+}
+
+/* Fix unwanted spacing between legend items */
+    #legend-toast-body .d-flex.flex-column > div:empty {
+      display: none !important;
+}
+
+/* Remove margin and padding from empty containers */
+    #legend-toast-body .d-flex.flex-column {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      line-height: 0 !important;
+}
+
+/* Remove spacing from spacer blocks in the legend */
+    #legend-toast-body .d-flex.flex-column.ms-2.mb-2 {
+      margin: 0 !important;
+      padding: 0 !important;
+      flex: 0 0 auto !important;
+      min-height: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+}
+
+</style>
+
+<!-- map -->
+<div id="pane" class="embed">
+    <div id="container">
+        <div id="map">
+<!-- Updated Legend -->
+<div class="toast-container position-fixed top-0 start-0" style="z-index: 999999; margin: 0; padding: 0;">
+    <div id="legend-toast-disabled" class="toast show" role="alert" aria-live="assertive" aria-atomic="true"
+         style="max-width: 220px; font-size: 0.8rem; margin: 0;">
+        <div class="toast-header py-1 px-2">
+            <strong class="me-auto">{{Legend}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="font-size: 0.7rem;"></button>
+        </div>
+        <div class="toast-body p-2 overflow-auto" id="legend-toast-body" style="max-height: 140px;">
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<!-- About Modal -->
+<div class="modal embed" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modalLabel">
+    <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="about-modalLabel">{{About}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{Close}}"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    {{{aboutBox}}}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{Close}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="offcanvas offcanvas-top" style="z-index: 1101; height: max-content" tabindex="-1" id="login-modal" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">{{Sign in}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" id="login-modal-body">
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-transparent fade-then-dragging pointer-event pe-none embed">
+    <div class="container-fluid">
+        <a class="navbar-brand d-none d-md-inline">
+            <span>{{{brandName}}}</span>
+        </a>
+        <div class="navbar-nav flex-row gap-1 flex-grow-1 me-2">
+            <button id="offcanvasLayerControlBtn"
+                    class="btn btn-primary text-nowrap pe-auto" type="button">
+                <i class="bi bi-list d-md-none"></i><span class="d-none d-md-inline">Menu</span> <i
+                    class="bi bi-arrow-bar-right"></i><i class="bi bi-arrow-bar-left d-none"></i>
+            </button>
+            <div class="input-group d-none justify-content-end me-2 pe-auto" id="edit-tool-group">
+                <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                <button id="offcanvasEditBtn"
+                        class="btn btn-secondary nav-edit-btn edit-attr-btn" type="button">
+                    <span class="d-none d-md-inline">Form</span> <i class="bi bi-arrow-bar-right"></i><i
+                        class="bi bi-arrow-bar-left d-none"></i>
+                </button>
+                <button id="editStopBtn"
+                        class="btn btn-danger nav-edit-btn" type="button">
+                    <i class="bi bi-slash-circle"></i> <span class="d-none d-md-inline">{{Cancel}}</span>
+                </button>
+            </div>
+        </div>
+
+        <button class="navbar-toggler ms-auto pe-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end flex-grow-0 pe-auto mt-2 mt-sm-0 gap-2"
+             id="navbarSupportedContent">
+            <!-- Updated Search Field (Smaller) -->
+<div class="mt-3 mt-sm-0 place-search nav-item" role="search" style="max-width: 180px;">
+    <div class="places">
+        <div class="input-group input-group-sm">
+            <input class="custom-search typeahead form-control" type="text" placeholder="{{Address}}" style="font-size: 0.8rem;">
+            <button class="btn btn-secondary searchclear" type="button" style="font-size: 0.8rem; padding: 0 0.5rem;">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+    </div>
+</div>
+            <div class="text-nowrap mt-2 mt-sm-0">
+                <div class="legend-btn nav-item" style="display: {{_displayLegend}};">
+                    <button id="btn-show-legend-in-map" data-module="legend"
+                            class="btn btn btn-outline-secondary">
+                        <i class="bi bi-card-text"></i> <span class="d-none d-lg-inline">{{Legend}}</span>
+                    </button>
+                </div>
+                <div class="nav-item about-btn">
+                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#about-modal">
+                        <i class="bi bi-info-circle"></i> <span class="d-none d-lg-inline">{{About}}</span>
+                    </button>
+                </div>
+                <div class="nav-item reset-btn">
+                    <button class="btn btn-outline-secondary" id="btn-reset">
+                        <i class="bi bi-x-circle"></i> <span class="d-none d-lg-inline">{{Reset}}</span>
+                    </button>
+                </div>
+                <div class="nav-item sign-in-btn d-none">
+                    <button class="btn btn-primary" data-bs-toggle="offcanvas"
+                            data-bs-target="#login-modal">
+                        <i class="bi bi-person"></i><span class="gc2-session-btn-text d-none d-lg-inline"> {{Sign in}}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="fade-then-dragging embed">
+    <!-- all offcanvas panels unchanged -->
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3 me-sm-5 embed">
+    <div id="info-toast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive"
+         aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="info-toast-body"></div>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 start-0 p-3" style="z-index: 999999999">
+    <div id="update-toast" class="toast" role="alert" aria-live="assertive"
+         aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">{{New version available}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="d-flex">
+            <div class="toast-body">
+                <button class='btn btn-primary' id='update-app-btn'>{{Update}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Legend Content (Unchanged) -->
+<div id="legend-content" class="d-none embed">
+    <div id="legend" class="legend"></div>
+</div>
